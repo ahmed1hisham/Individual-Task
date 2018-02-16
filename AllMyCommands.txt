@@ -1,0 +1,17 @@
+cd Desktop
+cd 'Ind Task'
+git init
+git commit -m "This is my first commit"
+git add .
+git commit -m "This is my second commit"
+git rm 'Second File.txt'
+git commit -m "This is after deleting the second file"
+git log  //this is to get the address of the wanted commit (77ed728d512029c)
+git checkout 77ed728d512029c
+git commit -m "Rolling back"
+git remote add githubrepo https://github.com/ahmed1hisham/Individual-Task.git
+git push -u githubrepo master
+git branch README
+git checkout README
+git add README.md
+git commit -m "This is the commitment of the README branch"
